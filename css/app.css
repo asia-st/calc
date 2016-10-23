@@ -1,0 +1,14 @@
+.btn-sq {
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 20px;
+  margin : 4px;
+}
+.result-container{
+    text-align:right;
+}
+
+.result-container .result{
+    font-size:42px;
+    font-weight:bold;
+}
