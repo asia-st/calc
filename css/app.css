@@ -1,14 +1,24 @@
-.btn-sq {
-  width: 50px !important;
-  height: 50px !important;
-  font-size: 20px;
-  margin : 4px;
+.container{
+  display:block;
+  width:620px;
 }
 .result-container{
     text-align:right;
 }
-
 .result-container .result{
-    font-size:42px;
+    font-size:48px;
     font-weight:bold;
+}
+.container .operations {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  display : inline-block;
+}
+.container .empty-field {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }

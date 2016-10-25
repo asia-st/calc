@@ -34,86 +34,64 @@
 
 <body>
     <!-- Page Content -->
-    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                        <button class="btn btn-primary" strategy = "dec">Dec</button>
+                          <button class="btn btn-primary" strategy = "bin">Bin</button>
+                            <button class="btn btn-primary" strategy = "hex" >Hex</button>
+                </div>
+                <div class="col-lg-6 result-container">
+                      <span id="result" class="result">0</span>
+                </div>
+            </div>
+            <div class="row">
+                  <button class="btn btn-primary operations" strategy = "numeric" >A</button>
+                  <button class="btn btn-primary operations" strategy = "numeric" >B</button>
+                  <button class="btn btn-primary operations" strategy = "clear" >Clear</button>
+                  <button class="btn btn-primary operations" strategy = "sqrt">&#8730;</button>
+                  <button class="btn btn-primary operations" strategy = "pow">x<sup>2</sup></button>
+                  <button class="btn btn-primary operations" strategy = "div">&#247;</button>
 
-      <div class="col-lg-6">
-        <div class="row">
-            <div class="col-lg-12 result-container">
-                  <span id="result" class="result">0</span>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "clear" >C</button>
+            <div class="row">
+
+                <button class="btn btn-primary operations" strategy = "numeric" >C</button>
+                <button class="btn btn-primary operations" strategy = "numeric" >D</button>
+                <button class="btn btn-primary operations" strategy = "numeric" >7</button>
+                <button class="btn btn-primary operations" strategy = "numeric">8</button>
+                <button class="btn btn-primary operations" strategy = "numeric">9</button>
+                <button class="btn btn-primary operations" strategy = "multiply">&#215;</button>
+
             </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "sqrt">&#8730;</button>
+            <div class="row">
+                <button class="btn btn-primary operations" strategy = "numeric" >E</button>
+                <button class="btn btn-primary operations" strategy = "numeric" >F</button>
+                <button class="btn btn-primary operations" strategy = "numeric">4</button>
+                <button class="btn btn-primary operations" strategy = "numeric">5</button>
+                <button class="btn btn-primary operations" strategy = "numeric">6</button>
+                <button class="btn btn-primary operations" strategy = "subtract">&#8722;</button>
+
             </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "pow">x<sup>2</sup></button>
+            <div class="row">
+                <div class="empty-field" ></div>
+                <div class="empty-field" ></div>
+                <button class="btn btn-primary operations" strategy = "numeric" >1</button>
+                <button class="btn btn-primary operations" strategy = "numeric">2</button>
+                <button class="btn btn-primary operations" strategy = "numeric">3</button>
+                <button class="btn btn-primary operations" strategy = "add">&#43;</button>
+
             </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "div">&#247;</button>
+            <div class="row">
+
+                <div class="empty-field" ></div>
+                <div class="empty-field" ></div>
+                <button class="btn btn-primary operations" strategy = "change_sign">&#8723;</button>
+                <button class="btn btn-primary operations" strategy = "numeric">0</button>
+                <button class="btn btn-primary operations" strategy = "comma">&#44;</button>
+                <button class="btn btn-primary operations" strategy = "equal">&#61;</button>
+
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "numeric" >7</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "numeric">8</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "numeric">9</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "multiply">&#215;</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "numeric">4</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "numeric">5</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "numeric">6</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "subtract">&#8722;</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "numeric" >1</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "numeric">2</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "numeric">3</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "add">&#43;</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "change_sign">&#8723;</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "numeric">0</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "comma">&#44;</button>
-            </div>
-            <div class="col-lg-3 text-center">
-                <button class="btn btn-primary btn-sq" strategy = "equal">&#61;</button>
-            </div>
-        </div>
-        <!-- /.row -->
-      </div>
     </div>
     <!-- /.container -->
 
