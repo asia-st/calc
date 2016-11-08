@@ -83,9 +83,33 @@
   HexSystem.prototype.toOwnSystem = function(value){
       return value.toString(16);
   }
-
-
-
+  
+  
+  function OctSystem() {}
+  OctSystem.prototype = new NumeralSystem();
+  
+  OctSystem.prototype.execute = function() {
+	  $("button[strategy=numeric]").attr("disabled",false);
+	  $("button[strategy=numeric]").each(function(){
+        if ($(this).text() >='A' && $(this).text() <='F'){
+            $(this).attr("disabled", true);
+        }
+        if ($(this).text() >='8' && $(this).text() <='9'){
+            $(this).attr("disabled", true);
+        }
+    });
+	$('#result').text(Calculator.binary_system.toDec($('#result').text()).toString(8));
+    Calculator.binary_system = this;
+  }
+  
+  OctSystem.prototype.toDec = function(value){
+      return parseInt(value, 8);
+  }
+  
+  OctSystem.prototype.toOwnSystem = function(value){
+      return value.toString(8);
+  }
+  
 
 
   function Operation() {
@@ -164,6 +188,7 @@
   EqualOperation.prototype.execute = function() {
       Calculator.currentOperation.result();
   }
+  
   function ClearOperation() {}
   ClearOperation.prototype = new Operation();
   ClearOperation.prototype.execute = function() {
@@ -194,6 +219,7 @@
       dec : new DecSystem(),
       bin : new BinSystem(),
       hex : new HexSystem(),
+	  oct : new OctSystem()
   };
 
   Calculator.binary_system = new DecSystem();
